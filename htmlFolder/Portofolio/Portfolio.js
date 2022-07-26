@@ -15,8 +15,8 @@ card.forEach(function(cardBtns){
 
 closeBtns.forEach((btn) => {
   btn.onclick = function(){
-    let modal = (btn.closest('.modal').style.display = 'none');
-    video.pause() 
+    btn.closest('.modal').style.display = 'none';
+    video.pause();
     video.currentTime = 0;
   }
 });
