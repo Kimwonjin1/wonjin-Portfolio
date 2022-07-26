@@ -1,0 +1,285 @@
+@import "./utils/wave/wave";
+@import "./utils/button/NeonButton/NavButton";
+@import "./utils/bg-ef/_bg-ef.scss";
+@import "./utils/navigationM/navigationM";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bubble {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+
+.home-container {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100vh;
+  
+  header {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    nav {
+      width: 100%;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      color: white;
+      padding: 20px;
+      z-index: 5;
+      .logo {
+        font-size: 40px;
+        margin-left: 5%;
+        display: inline-flex;
+
+        .logo-sub {
+          margin-left: 5px;
+          font-size: 11px;
+          font-weight: bold;
+          line-height: 13px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+        }
+      }
+      .nav-links {
+        display: flex;
+        list-style: none;       
+      }
+      .nav-active {
+        background-color: #C34A8D;
+      }
+    }
+  }
+  
+  content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+
+    .glass-boxs {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      top: 20%;
+      right: 5%;
+      cursor: pointer;
+      box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      border-left: 1px solid rgba(255, 255, 255, 0.5);
+     
+      
+      div {
+        .box-img {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: 1s;
+          img {
+            width: 90%;
+          }
+        }
+      }
+    
+    .glass-box1 {
+      position: absolute;
+      z-index: 3;
+      .box-img {
+        position: relative;
+        opacity: 1;
+      }
+      .right-text {
+        opacity: 1;
+      }
+
+      .next-b {
+        position: absolute;
+        opacity: 1;
+        bottom: -8%;
+        left: 10%;
+        animation: button-move 1s linear infinite alternate;
+        transition: 1s;
+        img {
+          max-width: 15%;
+        }
+      }
+
+      @keyframes button-move {
+        0% {
+        }
+        100% {
+          left: 5%;
+          bottom: -15%;
+        }
+      }
+
+      .right-text {
+        position: absolute;
+        top: 45%;
+        right: -10%;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        color: white;
+        font-size: 45px;
+        transition: 1s;
+      }
+    }
+
+    .glass-box2 {
+      position: absolute;
+      z-index: 2;
+      opacity: 0;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      .box-img {
+        position: relative;
+        width: 80%;
+      }
+      .right-text {
+        position: absolute;
+        text-align: center;
+        top: 73%;
+        right: 25%;
+        white-space: nowrap;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        color: white;
+        font-size: 4em;
+        transition: 1s;
+      }
+      .box2-button {
+        position: absolute;
+        font-weight: bold;
+        background: transparent;
+        border: transparent;
+        bottom: 5%;
+        left: 80%;
+        border-radius: 10px;
+        padding: 5px;
+        border: 5px solid #ADDF4B;
+        animation: box-button2 1s linear infinite alternate;
+        transition: 1s;
+        img {
+          max-width: 100%;
+        }
+      }
+      @keyframes box-button2  {
+       0%{
+       }100%{
+        bottom: 10%;
+       }
+      }
+
+    }
+
+    .glass-box3 {
+      position: absolute;
+      z-index: 1;
+      opacity: 0;
+      .box-img {
+        max-width: 500px;
+      }
+      .right-text {
+        position: absolute;
+        top: 95%;
+        right: 13%;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        color: white;
+        font-size: 4em;
+        transition: 1s;
+      }
+      .box3-button  {
+        position: absolute;
+        font-weight: bold;
+        background: transparent;
+        top: 100%;
+        left: 10%;
+        border-radius: 10px;
+        padding: 5px;
+        border: 5px solid #D36543;
+        animation: box-button3 1s linear infinite alternate;
+        transition: 1s;
+        img {
+          max-width: 100%;
+        }
+      }
+      @keyframes box-button3 {
+        0%{
+
+        }100%{
+          top: 104%;
+          left: 7%;
+        }
+      }
+    }
+  }
+
+  }
+  @media (max-width:1135px){
+    content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .glass-boxs {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        
+      }
+    }
+   
+  }
+  @media (max-width:620px){
+    content{
+      .glass-boxs {
+      
+        top: -20%;
+        left: 0%;
+        width: 80%;
+        height: 40%;  
+        min-height: 200px;
+        right: 1%;
+        
+      
+      .glass-box1, .glass-box2, .glass-box3 {
+        .right-text{
+          font-size: 25px;
+        }
+
+        .box2-button{
+          padding: 2px;
+          border: 3px solid #ADDF4B;
+          img{
+            width: 20px;
+          }
+        }
+        .box3-button{
+          padding: 2px;
+          border: 3px solid #D36543;
+          img{
+            width: 20px;
+          }
+        }
+      }
+    }
+    }
+   
+  }
+
+}

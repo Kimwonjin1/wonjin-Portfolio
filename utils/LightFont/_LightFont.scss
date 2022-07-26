@@ -1,0 +1,33 @@
+h2 {
+  font-size: 1em;
+  letter-spacing: 15px;
+  color: #0e3742;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  -webkit-box-reflect: below 1em linear-gradient(transparent, #0004);
+  line-height: 1em;
+  outline: none;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  50%,
+  72.3%,
+  80%,
+  90.1%,
+  97% {
+    color: #0e3742;
+    text-shadow: none;
+  }
+  42%,
+  70%,
+  76%,
+  88.2%,
+  96%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4;
+  }
+}

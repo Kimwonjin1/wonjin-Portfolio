@@ -1,0 +1,47 @@
+.card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.05),
+    -5px -5px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  margin: 30px;
+  .box {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    bottom: 5%;
+    background: #dae0eb;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+
+    .content {
+      padding: 5%;
+      text-align: center;
+      .box-f {
+        position: absolute;
+        text-transform: uppercase;
+        top: 5%;
+        right: 3%;
+        font-weight: bold;
+        font-size: 2em;
+        color: rgba(0, 0, 0, 0.05);
+        transition: 0.5s;
+        overflow: hidden;
+      }
+      h2:hover {
+        color: rgba(0, 0, 0, 1);
+      }
+    }
+  }
+}
+.card:hover .box {
+  transform: translateY(-50px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(45deg, #b95ce4, #4f29cd);
+}

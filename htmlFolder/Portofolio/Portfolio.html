@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Portfolio.css" />
+    <title>Document</title>
+  </head>
+  <body>
+   
+    <div class="portfolio-container">
+      <header>
+        <nav>
+        <div class="logo">WJ<div class="logo-sub">WonJin</br>full stack</br>developer</div></div>
+        <ul class="nav-links">
+          <li class="nav-link"><a href="../../index.html">HOME</a></li>
+          <li class="nav-link"><a href="../AboutMe/AboutMe.html">ABOUT ME</a></li>
+        </ul>
+        <div class="nav-icon">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+      <div class="card-container">
+      <div class="card" data-modal="modal1">
+        <a href="#">
+          <div class="imgBx">
+            <img src="../../img/shopping-cart.svg" />
+            <h3>food Store(반찬가게)</h3>
+          </div>
+        </a>
+        <div class="content"><img src="../../img/jeomsim.png" alt=""></div>
+        
+      </div>
+
+      <div class="card" data-modal="modal2">
+        <a href="#">
+          <div class="imgBx">
+            <img src="../../img/coin.png" />
+            <h3>Refund Agent(환불사이트)</h3>
+          </div>
+        </a>
+        <div class="content"><img src="../../img/coin-img.png" alt=""></div>
+      </div>
+      <div class="card" data-modal="modal3">
+        <a href="#">
+          <div class="imgBx">
+            <img src="../../img/food.png" />
+            <h3>Food Search(음식 검색 사이트)</h3>
+          </div>
+        </a>
+        <div class="content"><img src="../../img/Pfood.png" alt=""></div>
+      </div>
+      <div class="card" data-modal="modal4">
+        <a href="#">
+          <div class="imgBx">
+            <img src="../../img/disney-icon.png" />
+            <h3>Disney(디즈니플러스)</h3>
+          </div>
+        </a>
+        <div class="content"><img src="../../img/dis-img.png" alt=""></div>
+      </div>
+      <div class="card" data-modal="modal5">
+        <a href="#">
+          <div class="imgBx">
+            <img src="../../img/chat-icon.png"/>
+            <h3>CHAT KOREA(채팅웹)</h3>
+          </div>
+        </a>
+        <div class="content"><img src="../../img/chat-img.png" alt=""></div>
+      </div>
+      <div class="card" data-modal="modal6">
+        <a href="#">
+          <div class="imgBx">
+            <img src="../../img/football.png" />
+            <h3>FootBall(실시간 라이브 스코어)</h3>
+          </div>
+        </a>
+        <div class="content"><img src="../../img/football-img.png" alt=""></div>
+      </div>
+    </div>
+
+    <div id="modal1" class="modal">
+      <div class="modal-container">
+
+        <div class="modal-video"><video autoplay muted plays-inline loop><source src="../../video/foodStore-video.mp4" type="video/webm"></video></div>
+        <div class="modal-content">
+          <div class="modal-title">Food Store<br>(반찬가게)</div>
+          <div class="modal-des">react와 mongodb 기반에 cloudinary로 이미지의 관리를 하는 반찬가게 웹사이트 입니다 관리자 페이지 및 여러가지 기능 삽입 유지보수를 고객이 할 수 있도록 만들어 봤습니다</div>
+          <div class="skill-title">Use Skill</div>
+          <div class="use-skill"><img src="../../img/react.png" alt=""><img src="../../img/node.png" alt=""><img src="../../img/mongo.png" alt=""><img src="../../img/cloudinary.png" alt=""></div>
+          <div class="modal-git"><a href="https://github.com/Kimwonjin1/FoodStore">Food Store GitHub </a></div>
+          <div class="website"><a href="https://foodstore12345.herokuapp.com/">Food Store Webstie</a></div>
+          <div class="close">X</div>
+        </div>
+    
+      </div>
+      </div>
+    <div id="modal2" class="modal">
+      <div class="modal-container">
+
+        <div class="modal-video"><video autoplay muted plays-inline loop><source src="../../video/refund-video.mp4" type="video/webm"></video></div>
+        <div class="modal-content">
+          <div class="modal-title">Refund Agent<br>(환불사이트)</div>
+          <div class="modal-des">코인관련 그룹방 환불 대행 사이트(현재 운영중) react와 node 이미지관리의 cloudinary가 기본 베이스로 사용되었으며 관리자 페이지도 같이 제작되어 있어 고객이 유지보수가 가능합니다</div>
+          <div class="skill-title">Use Skill</div>
+          <div class="use-skill"><img src="../../img/react.png" alt=""><img src="../../img/node.png" alt=""><img src="../../img/mongo.png" alt=""><img src="../../img/cloudinary.png" alt=""></div>
+          <div class="modal-git"><a href="https://github.com/Kimwonjin1/REFUND_AGENCY">Refund Agent GitHub</a></div>
+          <div class="website"><a href="http://www.xn--hy1b74gwvjn4c9tcyya510d.site/">Refund Agent Webstie</a></div>
+          <div class="close">X</div>
+
+        </div>
+      </div>
+    </div>
+    <div id="modal3" class="modal">
+      <div class="modal-container">
+
+      <div class="modal-video"><video autoplay muted plays-inline loop><source src="../../video/Food.mp4" type="video/webm"></video></div>
+      <div class="modal-content">
+        <div class="modal-title">Food Search<br>(음식 검색 사이트)</div>
+        <div class="modal-des">themealdb api 활용하여 기본적인 음식에 대한 검색 및 레시피와 이미지를 보는 사이트 입니다</div>
+        <div class="skill-title">Use Skill</div>
+        <div class="use-skill"><img src="../../img/html-css.png" alt=""><img src="../../img/javascript.png" alt=""></div>
+        <div class="modal-git"><a href="https://github.com/Kimwonjin1/Food-Search-website">Food Search GitHub</a></div>
+        <div class="website"><a href="https://kimwonjin1.github.io/Food-Search-website">Food Search Webstie</a></div>
+        <div class="close">X</div>
+
+      </div>
+    </div>
+    </div>
+    <div id="modal4" class="modal">
+      <div class="modal-container">
+
+        <div class="modal-video"><video autoplay muted plays-inline loop><source src="../../video/disney-video.mp4" type="video/webm"></video></div>
+        <div class="modal-content">
+          <div class="modal-title">Disney<br>(디즈니플러스)</div>
+          <div class="modal-des">firebase와 react-redux를 기본 베이스로 사용하여 디즈니 웹사이트에 대한 유사 사이트를 제작하였습니다</div>
+          <div class="skill-title">Use Skill</div>
+          <div class="use-skill"><img src="../../img/firebase.png" alt=""><img src="../../img/react.png" alt=""><img src="../../img/redux.png" alt=""></div>
+          <div class="modal-git"><a href="https://github.com/Kimwonjin1/Food-Search-website">Disney GitHub</a></div>
+          <div class="website"><a href="https://kimwonjin1.github.io/Food-Search-website">Disney Webstie</a></div>
+          <div class="close">X</div>
+
+        </div>
+      </div>
+    </div>
+    <div id="modal5" class="modal">
+      <div class="modal-container">
+
+        <div class="modal-video"><video autoplay muted plays-inline loop><source src="../../video/chat-video.mp4" type="video/webm"></video></div>
+        <div class="modal-content">
+          <div class="modal-title">CHAT KOREA<br>(채팅웹)</div>
+          <div class="modal-des">채팅 웹으로 react와 mongodb 그리고 socket.io를 활용한 양방향 실시간 통신 웹을 제작하였음</div>
+          <div class="skill-title">Use Skill</div>
+          <div class="use-skill"><img src="../../img/react.png" alt=""><img src="../../img/node.png" alt=""><img src="../../img/socket.png" alt=""><img src="../../img/mongo.png" alt=""></div>
+          <div class="modal-git"><a href="https://github.com/Kimwonjin1/chat-app-live-">CHAT KOREA GitHub</a></div>
+          <div class="website"><a href="https://chat-app1459.herokuapp.com">CHAT KOREA Webstie</a></div>
+          <div class="close">X</div>
+
+        </div>
+      </div>
+    </div>
+    <div id="modal6" class="modal">
+      <div class="modal-container">
+
+        <div class="modal-video"><video autoplay muted plays-inline loop><source src="../../video/football-video.mp4" type="video/webm"></video></div>
+        <div class="modal-content">
+          <div class="modal-title">FootBall Live(실시간 라이브 스코어)</div>
+          <div class="modal-des">Football api를 이용하여 
+            현재 실시간으로 중계중인 라이브 충계 현황을 알수있음
+          </div>
+          <div class="skill-title">Use Skill</div>
+          <div class="use-skill"><img src="../../img/html-css.png" alt=""><img src="../../img/javascript.png" alt=""></div>
+          <div class="modal-git"><a href="https://github.com/Kimwonjin1/football-live">FootBall Live GitHub</a></div>
+          <div class="website"><a href="https://kimwonjin1.github.io/football-live/">FootBall Live Webstie</a></div>
+          <div class="close">X</div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+      
+
+  </body>
+  <script src="../../utils/navigationM/navigationM.js"></script>
+  <script defer src="./Portfolio.js"></script>
+</html>
